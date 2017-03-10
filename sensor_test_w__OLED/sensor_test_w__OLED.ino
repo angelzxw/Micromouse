@@ -74,37 +74,38 @@ void loop() {
 void printReadings(){
   // Print out results
   Serial.print("Distance_0: ");
+  /*
   if ( duration_0 > MAX_DIST){
-    Serial.println("Out of range");
+    Serial.println("Out of range!!");
   }
   else if (duration_0 < MIN_DIST){
     Serial.println("Object to close!!") ;
   }
   else{
-    Serial.println(distance_0);
-  }
+*/    Serial.println(distance_0);
+  //}
   
   Serial.print("Distance_1: ");
-  if ( duration_1 > MAX_DIST){
-    Serial.println("Out of range");
+  /*if ( duration_1 > MAX_DIST){
+    Serial.println("Out of range!!");
   }
   else if (duration_1 < MIN_DIST){
     Serial.println("Object to close!!") ;
   }
-  else{
+  else{*/
     Serial.println(distance_1);
-  }
+  //}
 
   Serial.print("Distance_2: ");
-  if ( duration_2 > MAX_DIST){
-    Serial.println("Out of range");
+  /*if ( duration_2 > MAX_DIST){
+    Serial.println("Out of range!!");
   }
   else if (duration_2 < MIN_DIST){
     Serial.println("Object to close!!") ;
   }
-  else{
+  else{*/
     Serial.println(distance_2);
-  }
+  //}
   Serial.println(" ");
   
   display.setTextSize(1);
@@ -113,37 +114,37 @@ void printReadings(){
   display.println("Results"); 
   
   display.print("Dis_0: ");   
-  if ( duration_0 > MAX_DIST){
-    display.println("Out of range!");
+  /*if ( duration_0 > MAX_DIST){
+    display.println("Out of range");
   }
   else if (duration_0 < MIN_DIST){
-    display.println("Object to close!");
+    display.println("Too close");
   }
-  else{
+  else{*/
     display.println(distance_0);
-  }
+  //}
 
   display.print("Dis_1: ");   
-  if ( duration_1 > MAX_DIST){
-    display.println("Out of range!");
+  /*if ( duration_1 > MAX_DIST){
+    display.println("Out of range");
   }
   else if (duration_1 < MIN_DIST){
-    display.println("Object to close!");
+    display.println("Too close");
   }
-  else{
+  else{*/
     display.println(distance_1);
-  }
+ // }
    
   display.print("Dis_2: ");   
-  if ( duration_2 > MAX_DIST){
-    display.println("Out of range!");
+  /*if ( duration_2 > MAX_DIST){
+    display.println("Out of range");
   }
   else if (duration_2 < MIN_DIST){
-    display.println("Object to close!");
+    display.println("Too close");
   }
-  else{
+  else{*/
     display.println(distance_2);
-  }
+  //}
   
   display.display();
 
