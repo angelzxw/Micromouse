@@ -14,9 +14,9 @@
 
 // Define program constants
 #define UNDEFINED -10
-#define LENGTH 9
-#define AREA 81
-#define AREA_WALLS 9 * (9 - 1) - 1
+#define LENGTH 16
+#define AREA 256
+#define AREA_WALLS 16 * (16 - 1) - 1
 
 // Action constants
 #define ACTION_MOVE 1
@@ -161,7 +161,7 @@ void loop() {
 
 		if(!hasWall && (val == nextVal && dir == direction || val < nextVal)) {
 			nextRow = row;
-			NextCol = col;
+			nextCol = col;
 			nextVal = val;
 		}
 	}
