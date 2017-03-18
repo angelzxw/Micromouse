@@ -68,7 +68,7 @@ void loop() {
   distance_2= duration_2*0.034/2;
   
   printReadings();
-  delay(60);
+
 }
 
 void printReadings(){
@@ -147,8 +147,6 @@ void printReadings(){
   //}
   
   display.display();
-
-  delay(1000);
   display.clearDisplay();
 }
 
